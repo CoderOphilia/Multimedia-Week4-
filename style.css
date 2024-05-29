@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+body{
+    background-color: rgb(250, 246, 241);
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ol{
+    list-style-type: upper-roman;
+}
+
+ol ol{
+    list-style-type: lower-alpha;
+}
+ol ol li:first-of-type{ /*Psuedo class*/
+    color: blue;
+    font-size: 2;
+}
+
+ol ol li:nth-of-type(2){
+    color: rgb(132, 230, 132);
+}
+
+ol ol li:last-of-type{ /*Psuedo class*/
+    color: rgb(212, 54, 6);
+    font-size: 2;
+}
+a:link {
+    color: rgb(221, 79, 157);
+}
+
+a:visited{
+    color: rgb(245, 162, 220);
+}
+a:hover{
+    color: darkcyan;
+    background-color: rgb(98, 172, 25);
+}
+
+p::first-letter{
+    font-size: 3em;
+    color: rgb(212, 83, 83);
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+div{
+    width: 33%;
+    background-color: bisque;
+    float: left;
+    /* margin-right: 20px; */
+    /* box-sizing: border-box; */
+}
+p.cls1{
+    clear: left;
+}
